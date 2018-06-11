@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  width: 100%
+}
+
+.navbar {
+  background-color: rgb(79, 180, 228);
+  padding: 1% 0;
+  font-size: 1.2em;
+}
+
+/*this will prevent the hamburger from overlapping the logo*/
+.navbar-brand {
+  min-height: 55px;
+  padding: 0 15px 5px;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #ffffff
+}
+
+/*change this so it gives a box around the active link, not just changing the text color*/
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active  {
+  color: #DDDDDD
+}
+
+.boards {
+  max-width: 75%;
+  max-height: auto;
+  
+}
+
+.boards:hover {
+  filter:drop-shadow(8px 8px 10px gray);
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       transform: scale(1.1);
+}
+.logo {
+  max-width: 75%;
+  max-height: auto;
+}
+
+#home {
+  background: url(img/landing.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.shopNow {
+  height: 100%;
+  display: table;
+  position: center;
+  margin: 0 auto
+}
+
+.landing-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  filter: drop-shadow(2px 2px 2px #000000);
+  color: #Ffffff
+}
+
+.landing-text h1 {
+  font-size: 500%;
+  font-weight: 700;
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+.padding img {
+  width: 100%;
+}
+
+#fixed {
+  background: url(img/purplemountains.jpg) no-repeat center center fixed;
+  display: table;
+  height: 60%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  background-color: #941279;
+  padding: 5% 5% 5% 5%;
+  color: #fff;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.fa:hover {
+  color: #d5d5d5;
+  text-decoration: none;
+}
+
+.icon {
+  max-width: 200px;
+}
+
+/*change h1 and icons depending on browser size*/
+
+@media (max-width: 768px) {
+  .landing-text h1 {
+    font-size: 300%;
+  }
+  .fa {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .icon {
+    padding-top: 5%;
+    max-width: 100px;
+  }
+}
+
+.events {
+  text-align: center
+}
+
+.boardHeader {
+  text-align: center
+}
