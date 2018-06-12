@@ -8,7 +8,8 @@
   margin: 0;
 }
 
-/* ==== navigation bar ==== */
+/* ==== Navigation bar ==== */
+
 .sticky-nav {
   background-color: rgb(34, 34, 34);
   display: grid;
@@ -17,6 +18,8 @@
   align-items: center;
   margin: none;
   overflow: hidden;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .sale-countdown{
@@ -41,36 +44,41 @@
   background-color: rgb(92, 92, 92);
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.view-cart{
+  padding: 5px;
 }
 
-/* ==== logo hidden until scrolled passed landing ==== */
-
-.site-logo-sm{
-  display: none;
+.main-nav i{
+  color: white;
+  transition: 300ms ease-in-out;
 }
 
-/* ==== Landing image ==== */
+.main-nav i:hover{
+  color: #30b3ff;
+  cursor: pointer;
+}
+
+/* ==== Landing Page ==== */
+
+h1{
+  font-size: 3rem;
+}
 
 .hero-carousel{
-  background-image: url("img/hero/hero1.jpeg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background: no-repeat center fixed url("img/hero/hero1.jpeg");
   background-size: cover;
-  height: 70rem;
+  height: 60rem;
   display: grid;
   grid-column-start: 1fr;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 .landing-container{
   margin-bottom: 9rem;
   text-align: center;
+  filter: drop-shadow(3px 3px 3px #000);
 }
 
 .shop-button{
@@ -78,7 +86,7 @@
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
+  width: 300px;
   height: 50px;
   text-align: center;
   line-height: 50px;
