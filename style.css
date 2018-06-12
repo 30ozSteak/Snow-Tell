@@ -22,6 +22,12 @@
   overflow: hidden;
 }
 
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .sale-countdown{
   color: rgb(255, 255, 255);
   font-size: 1.3rem;
