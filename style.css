@@ -40,7 +40,7 @@
 
 .sticky-nav {
   align-items: center;
-  background-color: rgb(34, 34, 34);
+  background-color: rgba(34, 34, 34, 0.308);
   display: grid;
   font-weight: 300;
   grid-template-columns: 30rem 1fr 30rem;
@@ -159,15 +159,78 @@ h1{
 
 /* ==== Product Preview ==== */
 
+.product-preview{
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  justify-content: space-around;
+  grid-gap: 5rem;
 
+}
 
+/* ==== Product Literal ==== */
+
+.product-card{
+  box-shadow: 10px 10px rgba(163, 163, 163, 0.52);
+}
+
+h2{
+ letter-spacing: .3rem;
+}
+
+.product-price {
+  margin-top: 20px;
+}
+
+img{
+  width: 100%;
+}
+
+.product-bot{
+  padding: .5rem 2rem;
+}
+
+.product-description{
+  color: rgb(46, 46, 46);
+  letter-spacing: .1rem;
+  font-size: .8rem;
+  margin-top: 15px;
+}
+
+.price-slash{
+  text-decoration: line-through;
+  color: rgba(2, 1, 1, 0.603);
+  margin: 4rem 0 0 0
+}
+
+.price-actual{
+  color: rgb(28, 134, 233);
+  margin-top: 0;
+}
+
+.fa-shopping-cart{
+  color: rgb(202, 202, 202);
+  float: right;
+  margin-bottom: 1rem;
+  transition: 00ms ease-in-out;
+
+}
+
+.fa-shopping-cart:hover{
+  color: rgb(28, 134, 233);
+  cursor: pointer;
+}
+
+.to-cart {
+  text-decoration: none;
+}
 
 
 /* ==== Divider 1 ==== */
 
 hr{
   width: 20rem;
-  margin: 5rem auto 0 auto;
+  margin: 5rem auto;
   color: rgb(199, 199, 199)
 }
 
