@@ -8,7 +8,35 @@
   margin: 0;
 }
 
-/* ==== Navigation bar ==== */
+/* ==== Top Header ==== */
+
+/* = Sale bar = */
+.non-sticky-nav{
+  background-color: rgb(59, 59, 59);
+}
+
+.sale-countdown{
+  color: rgb(255, 255, 255);
+  display: grid;
+  font-size: 1.2rem;
+  grid-template-columns: 1fr 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 2rem;
+  align-content: center;
+}
+
+.fa-times-circle{
+  color: rgb(110, 110, 110);
+}
+
+.fa-times-circle:hover{
+  cursor: pointer;
+  color: red
+}
+
+/* = Nav bar = */
 
 .sticky-nav {
   align-items: center;
@@ -16,22 +44,15 @@
   display: grid;
   font-weight: 300;
   grid-template-columns: 30rem 1fr 30rem;
-  grid-template-rows: 2.5rem;
   letter-spacing: 2px;
   margin: none;
   overflow: hidden;
+  text-transform: uppercase;
 }
 
-.sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sale-countdown{
-  color: rgb(255, 255, 255);
-  font-size: 1.3rem;
-  text-align: center;
+.logo-sm{
+  width: 25%;
+  padding-left: 10px;
 }
 
 .main-nav{
@@ -40,7 +61,7 @@
 
 .main-nav a {
   color: white;
-  padding: 14px;
+  padding: 10px;
   margin: none;
   text-decoration: none;
   transition: 300ms ease-in-out;
@@ -52,6 +73,7 @@
 
 .view-cart{
   padding: 5px;
+  cursor: pointer;
 }
 
 .main-nav i{
@@ -64,10 +86,20 @@
   cursor: pointer;
 }
 
-/* ==== Landing Page ==== */
+/* = Sticky the Nav after scroll = */
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* ==== Landing ==== */
 
 h1{
   font-size: 3rem;
+  font-weight: 300
 }
 
 .hero-carousel{
@@ -87,19 +119,18 @@ h1{
   text-align: center;
 }
 
-/* ==== Shiny Button ==== */
+/* ~~~~ Shiny Button ~~~~ */
 
 .shop-button{
-  background: linear-gradient(90deg, #30b3ff, #19c1eb);
-  border-radius: 25px;
+  background: linear-gradient(90deg, #2222223b, #4747473d);
+  border: 1px solid white;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
   left: 50%;
   height: 50px;
   line-height: 50px;
-  letter-spacing: 1px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   overflow: hidden;
   position: absolute;
   text-align: center;
@@ -126,4 +157,20 @@ h1{
   left: 100%;
 }
 
+/* ==== Product Preview ==== */
 
+
+
+
+
+/* ==== Divider 1 ==== */
+
+hr{
+  width: 20rem;
+  margin: 5rem auto 0 auto;
+  color: rgb(199, 199, 199)
+}
+
+.divider{
+  text-align: center;
+}
