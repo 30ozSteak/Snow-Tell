@@ -8,6 +8,14 @@
   margin: 0;
 }
 
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
 
 /* ==== Top Header ==== */
 
@@ -51,10 +59,32 @@
   text-transform: uppercase;
 }
 
-.logo-sm{
-  width: 25%;
-  padding-left: 10px;
+.stomp-logo-sm{
+  font-family: 'Rubik Mono One', sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 1rem;
+  text-shadow: 1px 1px #383838c9;
+  transition: 300ms ease-in-out;
 }
+
+.stomp-logo-sm:hover{
+    color: rgb(239, 120, 255);
+    animation: morphingLogo 3s linear infinite;
+  }
+  
+  @keyframes morphingLogo {
+    0% {
+      filter: hue-rotate(-90deg);
+    }
+    50% {
+      filter: hue-rotate(90deg);
+    }
+    100% {
+      filter: hue-rotate(-90deg);
+    }
+  }
 
 .main-nav{
   text-align: right;
@@ -64,7 +94,6 @@
   color: white;
   padding: 10px;
   margin: none;
-  text-decoration: none;
   transition: 300ms ease-in-out;
 }
 
@@ -112,13 +141,16 @@
   text-shadow: 3px 3px #383838c9;
 }
 
-.emoji1,
-.emoji2 {
-  width: 10%;
+.landing-text{
+  text-transform: lowercase;
+  text-align: left;
+  font-size: 9rem;
 }
 
-.emoji1{
-  transform: rotate(25)
+.emoji2 {
+  width: 10%;
+  transform: rotate(20deg);
+  margin-left: 3rem;
 }
 
 .landing-container{
@@ -130,6 +162,7 @@
 .landing-container a{
   margin-left: 35rem;
 }
+
 .shop-button{
   background: #2222226b;
   border: 1px solid white;
@@ -142,7 +175,6 @@
   overflow: hidden;
   position: absolute;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
   transition: .5s;
   width: 300px;
@@ -173,6 +205,12 @@
   justify-content: space-around;
   grid-gap: 5rem;
   transition: .5s;
+}
+
+.product-header{
+  text-align: end;
+  font-size: 6rem;
+  margin: 5rem 0;
 }
 
 /* ==== Product Summary ==== */
@@ -265,12 +303,9 @@ hr{
 
 .divider{
   display: grid;
-  grid-template-rows: 30rem 30rem 30rem;
-  text-align: center;
-  height: 90rem;
-  background: no-repeat center fixed url("img/graphics/smokey.png");
+  grid-template-rows: 1fr 1fr;
+  background: no-repeat center url("img/hero/skater.png");
 }
-
 
 .hero-divider{
   text-transform: lowercase;
@@ -278,9 +313,42 @@ hr{
   font-size: 9rem;
 }
 
-.divider img{
-  width: 50%;
+.divider-left-text {
+  margin-left: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px #383838c9;
 }
+
+.divider-right-text{
+  font-size: 7rem;
+  text-align: end; 
+  color: white;
+  margin-top: 7rem;
+  margin-right: 4rem;
+}
+
+.divider-cost{
+  font-size: 8rem;
+  transform: skewX(-30deg);
+  transform: scaleY(1.5)
+}
+
+.apparel-btn{
+  display: inline;
+  padding: 10px;
+  background-color: black;
+  border-radius: 50px;
+  margin-left: 10rem;
+}
+
+.apparel-btn a{
+  margin: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
 
 
 /* Save for something else  */
