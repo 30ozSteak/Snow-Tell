@@ -339,18 +339,6 @@ hr{
   margin-left: 10rem;
 }
 
-/* Gear Preview */
-
-.product-header.gear{
-  text-align: start;
-  font-size: 6rem;
-  margin: 5rem 0;
-}
-
-
-
-
-
 .divider-right-text{
   font-size: 7rem;
   text-align: end; 
@@ -363,7 +351,94 @@ hr{
   font-size: 12rem;
 }
 
+/* Gear Preview */
 
+.product-header.gear{
+  text-align: start;
+}
+
+/* ==== Social Grid ==== */
+
+
+.soc-text{
+  font-size: 7rem;
+}
+
+.social-grid {
+  background: no-repeat center fixed url("img/grid/grid5.jpeg");
+  display: grid;
+  justify-content: space-around;
+  grid-gap: 1rem;
+}
+
+.top-row,
+.bottom-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 1rem;
+}
+
+.bottom-row{
+  margin-bottom: 15rem;
+}
+
+.grid-square{
+  background-color: grey;
+  width: 23rem;
+  height: 23rem;
+}
+
+.sq1{
+  background: no-repeat center url("img/grid/grid8.jpg");
+}
+
+.sq1:hover{
+  opacity: .7;
+  background-color: #000;
+  filter:blur(2px);
+}
+
+.grid1-desc{
+  text-align: center;
+  display: grid;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.363);
+  align-content: center;
+  margin: 8rem 4rem;
+  color: white;
+}
+
+.grid1-desc a{
+  margin-top: .5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.grid1-desc i{
+  color: rgb(255, 86, 86);
+
+}
+
+.sq2{
+  background: no-repeat center url("img/grid/grid2.jpeg");
+}
+
+.sq3{
+  background: no-repeat center url("img/grid/grid3.jpeg");
+}
+
+.sq4{
+  background: no-repeat center url("img/grid/grid4.jpeg");
+}
+
+.sq5{
+  background: no-repeat center/ cover url("img/grid/grid1.jpeg");
+}
+
+.sq6{
+  background: no-repeat center/ cover url("img/grid/grid7.jpg");
+}
 
 /* Save for something else  */
 
