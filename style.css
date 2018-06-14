@@ -8,6 +8,7 @@
   margin: 0;
 }
 
+
 /* ==== Top Header ==== */
 
 /* = Sale bar = */
@@ -99,7 +100,7 @@
 
 h1{
   font-size: 3rem;
-  font-weight: 300
+  font-weight: 300;
 }
 
 .hero-carousel{
@@ -115,7 +116,6 @@ h1{
 
 .landing-container{
   margin-bottom: 9rem;
-  filter: drop-shadow(3px 3px 3px #000);
   text-align: center;
 }
 
@@ -165,66 +165,87 @@ h1{
   grid-template-columns: 20rem 20rem 20rem;
   justify-content: space-around;
   grid-gap: 5rem;
-
+  transition: .5s;
 }
 
-/* ==== Product Literal ==== */
+/* ==== Product Summary ==== */
 
 .product-card{
-  box-shadow: 10px 10px rgba(163, 163, 163, 0.52);
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+  height: 30rem;
 }
 
-h2{
- letter-spacing: .3rem;
+.card-literal{
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 19rem 3rem 5rem;
 }
 
-.product-price {
-  margin-top: 20px;
+.img-container{
+  margin: 0 auto;
+  width: 60%;
 }
 
-img{
-  width: 100%;
+/* = Size Options = */
+
+.size-options{
+  border-top: 1px solid rgb(182, 182, 182);
+  border-bottom: 1px solid rgb(182, 182, 182);
+  text-align: center;
+  display: grid;
+  align-items: center;
 }
 
-.product-bot{
-  padding: .5rem 2rem;
+.size-options span{
+  padding: 8px 5px;
+  margin: 0 10px;
+  transition: 300ms ease-in-out;
 }
 
-.product-description{
-  color: rgb(46, 46, 46);
-  letter-spacing: .1rem;
-  font-size: .8rem;
-  margin-top: 15px;
-}
-
-.price-slash{
-  text-decoration: line-through;
-  color: rgba(2, 1, 1, 0.603);
-  margin: 4rem 0 0 0
-}
-
-.price-actual{
-  color: rgb(28, 134, 233);
-  margin-top: 0;
-}
-
-.fa-shopping-cart{
-  color: rgb(202, 202, 202);
-  float: right;
-  margin-bottom: 1rem;
-  transition: 00ms ease-in-out;
-
-}
-
-.fa-shopping-cart:hover{
-  color: rgb(28, 134, 233);
+.size-options span:hover{
+  color: #ffffff;
+  background-color: rgb(185, 185, 185);
+  border-radius: 100%;
   cursor: pointer;
 }
 
-.to-cart {
-  text-decoration: none;
+/* = Product Details = */
+
+.fa-times{
+  position: absolute;
+  margin: 1rem;
+  color: rgb(207, 207, 207);
+  transition: 300ms ease-in-out;
 }
 
+.fa-times:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.product-name{
+  margin: 1rem 0;
+}
+
+.availability{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.add-to-cart{
+  color: rgb(153, 153, 153);
+  transition: 300ms ease-in-out;
+}
+
+.add-to-cart:hover{
+  color: #30b3ff;
+  cursor: pointer;
+}
+
+.availability-dot{
+  color: rgb(62, 195, 62);
+}
 
 /* ==== Divider 1 ==== */
 
@@ -237,3 +258,34 @@ hr{
 .divider{
   text-align: center;
 }
+
+.divider img{
+  width: 50%;
+}
+
+
+/* Save for something else  */
+
+
+/* .color-options{
+  margin-top: 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.322);
+}
+
+.color-options i {
+  font-size: 1.5rem;
+  padding: 3px 25px;
+}
+
+.var-red {
+  color: rgb(255, 80, 80);
+}
+
+.var-green{
+  color: rgb(106, 255, 106);
+}
+
+.var-yellow{
+  color: rgb(255, 255, 104);
+} */
