@@ -144,7 +144,7 @@ a{
 .landing-text{
   text-transform: lowercase;
   text-align: left;
-  font-size: 9rem;
+  font-size: 7rem;
 }
 
 .emoji2 {
@@ -158,6 +158,8 @@ a{
 }
 
 /* ~~~~ Shiny Button ~~~~ */
+
+/* ~~Shiny Button Large */
 
 .landing-container a{
   margin-left: 35rem;
@@ -195,6 +197,19 @@ a{
 .shop-button:hover:before{
   left: 110%;
 }
+
+/* ~~Shiny Button Medium */
+
+.shop-button.med{
+  width: 200px;
+}
+
+/* ~~Shiny Button Small */
+
+.shop-button.sm{
+  width: 150px;
+}
+
 
 /* ==== Product Preview ==== */
 
@@ -304,8 +319,10 @@ hr{
 .divider{
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background: no-repeat center url("img/hero/skater.png");
+  background: no-repeat center fixed url("img/hero/skater.png");
+  margin: 3rem;
 }
+
 
 .hero-divider{
   text-transform: lowercase;
@@ -314,39 +331,36 @@ hr{
 }
 
 .divider-left-text {
-  margin-left: 2.5rem;
   color: white;
   text-shadow: 1px 1px #383838c9;
 }
+
+.hero-divider-btn{
+  margin-left: 10rem;
+}
+
+/* Gear Preview */
+
+.product-header.gear{
+  text-align: start;
+  font-size: 6rem;
+  margin: 5rem 0;
+}
+
+
+
+
 
 .divider-right-text{
   font-size: 7rem;
   text-align: end; 
   color: white;
-  margin-top: 7rem;
-  margin-right: 4rem;
+  margin-top: 3rem;
+  text-shadow: 1px 1px #383838c9;
 }
 
 .divider-cost{
-  font-size: 8rem;
-  transform: skewX(-30deg);
-  transform: scaleY(1.5)
-}
-
-.apparel-btn{
-  display: inline;
-  padding: 10px;
-  background-color: black;
-  border-radius: 50px;
-  margin-left: 10rem;
-}
-
-.apparel-btn a{
-  margin: 2rem;
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 100;
+  font-size: 12rem;
 }
 
 
