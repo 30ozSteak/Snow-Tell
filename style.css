@@ -553,16 +553,32 @@ hr{
 /* ==== Footer ==== */
 
 .footer{
-  background-color: grey; 
+  background-color: rgba(224, 224, 224, 0.5); 
   display: grid;
-  grid-template-columns: 20rem 20rem 20rem 1fr;
+  grid-template-columns: 20rem 20rem 1fr;
   height: 15rem;
 }
 
-.footer-col1{
+.footer-col1,
+.footer-col2{
   margin: 2rem 5rem 1rem 5rem;
 }
 
+.footer-col3 h3{
+  margin-top: 2rem;
+}
+
+.footer-col1 li,
+.footer-col2 li{
+  margin: .5rem 0;
+  font-weight: 300;
+}
+
+.footer-col3 input{
+  width: 90%;
+  font-size: 1.5rem;
+  padding: .3rem;
+}
 
 
 
