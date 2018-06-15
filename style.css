@@ -390,34 +390,49 @@ hr{
 }
 
 .sq1{
-  background: no-repeat center url("img/grid/grid8.jpg");
+  position: relative;
+  overflow: hidden;
 }
 
-.sq1:hover{
-  opacity: .7;
-  background-color: #000;
-  filter:blur(2px);
+.sq1 img{
+  width: 23rem;
+  height: 23rem;
 }
 
-.grid1-desc{
+.sq1:before{
+  background: rgb(0, 162, 255);
+  content: '';
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transition: .5s;
+  width: 100%;
+}
+
+.sq1:hover:before{
+  left: 0%;
+}
+
+.sq1-desc{
+  font-size: 2rem;
+  opacity: 0;
+  color: white;
+  margin-top: 8rem;
+  padding: 2rem;
+  position: relative;
+  z-index: 100;
   text-align: center;
-  display: grid;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.363);
-  align-content: center;
-  margin: 8rem 4rem;
-  color: white;
+  transition: 300ms ease-in-out;
 }
 
-.grid1-desc a{
-  margin-top: .5rem;
-  color: white;
-  text-decoration: none;
+.sq1:hover .sq1-desc{
+  opacity: 100;
 }
 
-.grid1-desc i{
-  color: rgb(255, 86, 86);
 
+.sq1{
+  background: no-repeat center url("img/grid/grid8.jpg");
 }
 
 .sq2{
