@@ -317,13 +317,6 @@ a{
   cursor: pointer;
 }
 
-.expanded{
-  opacity: 1;
-  transition: opacity 0.3s 0.6s;
-  height: 700px;
-  width: 700px;
-}
-
 .availability-dot{
   color: rgb(62, 195, 62);
 }

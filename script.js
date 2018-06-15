@@ -27,3 +27,8 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+// Doesnt work yet
+// $('.add-to-cart').on('click', function(e){
+//   e.preventDefault();
+//   $('.add-to-cart').toggleClass('expanded');
+// })
