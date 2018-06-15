@@ -572,6 +572,14 @@ hr{
   height: 15rem;
 }
 
+.footer li{
+  padding-left: 5px;
+  border-left: 3px solid transparent;
+}
+.footer li:hover{
+  border-left: 3px solid rgb(0, 174, 255);
+}
+
 .footer-col1,
 .footer-col2{
   margin: 2rem 5rem 1rem 5rem;
@@ -602,6 +610,7 @@ hr{
   font-weight: 100;
   background-color: rgba(224, 224, 224, 0.5); 
 }
+
 .created-by p{
   font-size: .5rem;
 }
