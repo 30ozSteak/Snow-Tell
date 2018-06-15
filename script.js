@@ -1,3 +1,4 @@
+//needs improving
 $(window).on('scroll', function(){
   $('.sticky-nav').addClass('sticky');
   $('.non-sticky-nav').hide();
@@ -12,7 +13,6 @@ var saleEndsDate = new Date("July 20, 2018 12:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
-
   var distance = saleEndsDate - now;
 
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -27,8 +27,10 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-// Doesnt work yet
-// $('.add-to-cart').on('click', function(e){
-//   e.preventDefault();
-//   $('.add-to-cart').toggleClass('expanded');
-// })
+// // Doesnt work yet
+// jQuery(document).ready(function($) {
+// 	$('.buy').on('click', function(e) {
+// 		e.preventDefault();
+// 		$('.product-card').toggleClass('.cart-expanded');
+// 	})
+// });
