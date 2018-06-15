@@ -359,6 +359,7 @@ hr{
 
 /* ==== Social Grid ==== */
 
+/* = Grid General = */
 
 .soc-text{
   font-size: 7rem;
@@ -389,14 +390,13 @@ hr{
   height: 23rem;
 }
 
+/* ==== Social Grid 1 ==== */
+
 .sq1{
+  background: no-repeat center url("img/grid/grid8.jpg");
   position: relative;
   overflow: hidden;
-}
-
-.sq1 img{
-  width: 23rem;
-  height: 23rem;
+  transition: 300ms ease-in-out;
 }
 
 .sq1:before{
@@ -410,20 +410,24 @@ hr{
   width: 100%;
 }
 
-.sq1:hover:before{
-  left: 0%;
-}
-
 .sq1-desc{
   font-size: 2rem;
   opacity: 0;
-  color: white;
   margin-top: 8rem;
   padding: 2rem;
   position: relative;
   z-index: 100;
   text-align: center;
+}
+
+.sq1-desc a{
+  color: white;
+  font-weight: 100;
   transition: 300ms ease-in-out;
+}
+
+.sq1:hover:before{
+  left: 0%;
 }
 
 .sq1:hover .sq1-desc{
@@ -431,29 +435,45 @@ hr{
 }
 
 
-.sq1{
-  background: no-repeat center url("img/grid/grid8.jpg");
+.sq1-desc a:hover{
+  border: 1px solid white;
+  padding: 10px;
 }
+
+/* ==== Social Grid 2 ==== */
 
 .sq2{
   background: no-repeat center url("img/grid/grid2.jpeg");
 }
 
+/* ==== Social Grid 3 ==== */
+
 .sq3{
   background: no-repeat center url("img/grid/grid3.jpeg");
 }
+
+/* ==== Social Grid 4 ==== */
 
 .sq4{
   background: no-repeat center url("img/grid/grid4.jpeg");
 }
 
+/* ==== Social Grid 5 ==== */
+
 .sq5{
   background: no-repeat center/ cover url("img/grid/grid1.jpeg");
 }
 
+/* ==== Social Grid 6 ==== */
+
 .sq6{
   background: no-repeat center/ cover url("img/grid/grid7.jpg");
 }
+
+
+
+
+
 
 /* Save for something else  */
 
