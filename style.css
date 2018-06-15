@@ -359,7 +359,7 @@ hr{
 
 /* ==== Social Grid ==== */
 
-/* = Grid General = */
+/* ==== Grid General = */
 
 .soc-text{
   font-size: 7rem;
@@ -390,24 +390,41 @@ hr{
   height: 23rem;
 }
 
-/* ==== Social Grid 1 ==== */
-
-.sq1{
-  background: no-repeat center url("img/grid/grid8.jpg");
+.sq1,
+.sq2,
+.sq3,
+.sq4,
+.sq5,
+.sq6{
   position: relative;
   overflow: hidden;
   transition: 300ms ease-in-out;
 }
 
-.sq1:before{
-  background: rgb(0, 162, 255);
+.sq1:before,
+.sq2:before,
+.sq3:before,
+.sq4:before,
+.sq5:before,
+.sq6:before{
   content: '';
   height: 100%;
-  left: -100%;
   position: absolute;
-  top: 0;
   transition: .5s;
   width: 100%;
+}
+
+
+/* ==== Social Grid 1 ==== */
+
+.sq1{
+  background: no-repeat center url("img/grid/grid8.jpg");
+}
+
+.sq1:before{
+  background: rgb(0, 162, 255);
+  left: -100%;
+  top: 0;
 }
 
 .sq1-desc{
