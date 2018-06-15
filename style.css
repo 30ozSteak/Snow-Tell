@@ -16,7 +16,6 @@ a{
   text-decoration: none;
 }
 
-
 /* ==== Top Header ==== */
 
 /* = Sale bar = */
@@ -580,11 +579,39 @@ hr{
   padding: .3rem;
 }
 
+/* ==== Created By Footer ==== */
 
+.created-by{
+  list-style-type: none;
+  font-size: 2rem;
+  text-align:center;
+  font-weight: 100;
+}
+.created-by p{
+  font-size: .5rem;
+}
 
+.created-by i{
+  color: rgb(167, 167, 167);
+}
 
+.created-by i:hover{
+  color: rgb(239, 120, 255);
+  animation: morphingLogo 3s linear infinite;
+  cursor: pointer;
+}
 
-
+@keyframes morphingLogo {
+  0% {
+    filter: hue-rotate(-90deg);
+  }
+  50% {
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    filter: hue-rotate(-90deg);
+  }
+}
 
 
 /* Save for something else  */
