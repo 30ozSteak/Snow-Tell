@@ -27,10 +27,15 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-// // Doesnt work yet
 // jQuery(document).ready(function($) {
 // 	$('.buy').on('click', function(e) {
 // 		e.preventDefault();
 // 		$('.product-card').toggleClass('.cart-expanded');
 // 	})
 // });
+
+$('add-to-cart').on('click', function(e){
+  e.preventDefault();
+  console.log('test');
+  $('.added-to-cart').toggleClass('test-class');
+})
