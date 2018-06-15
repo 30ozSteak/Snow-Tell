@@ -361,8 +361,8 @@ hr{
 
 /* ==== Grid General ==== */
 
-.soc-text{
-  font-size: 7rem;
+.social-text{
+  font-size: 6rem;
 }
 
 .social-grid {
@@ -462,7 +462,7 @@ hr{
 /* ==== Social Grid 1 ==== */
 
 .sq1{
-  background: no-repeat center url("img/grid/grid8.jpg");
+  background: no-repeat center/ cover url("img/grid/grid8.jpg");
 }
 
 .sq1:before{
@@ -549,6 +549,22 @@ hr{
 .sq6:hover:before{
   right: 0;
 }
+
+/* ==== Footer ==== */
+
+.footer{
+  background-color: grey; 
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem 1fr;
+  height: 15rem;
+}
+
+.footer-col1{
+  margin: 2rem 5rem 1rem 5rem;
+}
+
+
+
 
 
 
