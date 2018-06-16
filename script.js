@@ -28,22 +28,13 @@ var x = setInterval(function() {
 }, 1000);
 
 
-
-  $('.add-to-cart').click(function(){
+// add to cart / remove from cart animations on click 
+$('.add-to-cart').click(function(){
     $(this).closest('.product-card').find('.cart-overlay').animate({bottom: '0'})
   })
 
-$('.undo-add').on('click', function(){
+$('.undo-add').click(function(){
   $(this).closest('.product-card').find('.cart-overlay').animate({bottom: 480})
 })
 
 
-// $('.add-to-cart').on('click', function(){
-//   cardOverlay.animate({'bottom': 0},'easeInOutCirc');
-//   // counter + 1;
-// })
-
-// $('.undo-add').on('click', function(){
-//   $('.cart-overlay').animate({'bottom': 480}, 'easeInOutCirc');
-//   // counter - 1
-// })

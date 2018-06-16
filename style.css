@@ -250,8 +250,8 @@ a{
   background-color: rgba(250, 250, 250, 0.959);
   color: black;
   text-transform: uppercase;
-  -webkit-transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  transition:         all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition:         all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   letter-spacing: .8rem;
 }
 
@@ -268,7 +268,6 @@ a{
   color: rgb(199, 199, 199);
   text-shadow: none;
   cursor: pointer;
-  transition: 300ms ease-in-out;
 }
 
 .bottom-half-overlay i:hover{
@@ -639,7 +638,8 @@ hr{
 
 .footer-col3 input{
   width: 90%;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  letter-spacing: .1rem;
   padding: .3rem;
 }
 
