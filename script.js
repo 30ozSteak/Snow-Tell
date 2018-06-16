@@ -27,15 +27,23 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-// jQuery(document).ready(function($) {
-// 	$('.buy').on('click', function(e) {
-// 		e.preventDefault();
-// 		$('.product-card').toggleClass('.cart-expanded');
-// 	})
-// });
 
-$('add-to-cart').on('click', function(e){
-  e.preventDefault();
-  console.log('test');
-  $('.added-to-cart').toggleClass('test-class');
+// $('.add-to-cart').on('click', function(){
+//   $('.cart-overlay').animate({'bottom': 0},'easeInOutCirc');
+//   // counter + 1;
+// })
+
+// $('.undo-add').on('click', function(){
+//   $('.cart-overlay').animate({'bottom': 480}, 'easeInOutCirc');
+//   // counter - 1
+// })
+
+$('.add-to-cart').on('click', function(){
+  $('.cart-overlay').animate({'bottom': 0},'easeInOutCirc');
+  // counter + 1;
+})
+
+$('.undo-add').on('click', function(){
+  $('.cart-overlay').animate({'bottom': 480}, 'easeInOutCirc');
+  // counter - 1
 })
