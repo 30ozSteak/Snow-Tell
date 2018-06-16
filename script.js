@@ -1,13 +1,3 @@
-//needs improving
-$(window).on('scroll', function(){
-  $('.sticky-nav').addClass('sticky');
-  $('.non-sticky-nav').hide();
-});
-
-$('.fa-times-circle').on('click', function(){
-  $('.non-sticky-nav').hide();
-})
-
 // Countdown Timer to time sale ends
 var saleEndsDate = new Date("July 20, 2018 12:00:00").getTime();
 
