@@ -25,6 +25,4 @@ $('.add-to-cart').click(function(){
 
 $('.undo-add').click(function(){
   $(this).closest('.product-card').find('.cart-overlay').animate({bottom: 480})
-})
-
-
+});
