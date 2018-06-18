@@ -37,6 +37,7 @@ Hooboy, there are lots of things that need addressing.
 - add functionality that requires the user to select a size before adding to cart
 - fix sizing hover effects
 - add another row ( or two ) of products that are overflow hidden and populate the area of a remove()'d card
+- add ability to flip over the card and read a small blurb about it.
 
 #### Summer Sale Hero Landing
 - Fix this entire thing. It's too big, it's not cropped right, the text is in an <li> which prevents it from looking like all the other h2's on the page, etc. This part's a mess. It could be also be a carousel
