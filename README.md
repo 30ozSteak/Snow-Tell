@@ -7,7 +7,7 @@ My first real attempt at a designing / programming a e-commerce site from scratc
 
 ## Todo
 
-Hooboy, there are lots of things that need addressing before I start adding new features/functionality.
+Hooboy, there are lots of things that need addressing.
 
 #### Nav-bar
 - Countdown non-sticky navigation bar needs it's remove() function to work again.
